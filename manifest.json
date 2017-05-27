@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Trump Task",
+  "version": "1.0",
+  "description": "Remove Trump", 
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["myscripts.js"],  //Javascript file that will find and replace all the desired words from the page
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "logo.png" // icon name 
+  }
+  
+	 
+}
